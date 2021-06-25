@@ -7,6 +7,10 @@ header {
     top: 0;
 }
 
+.border-bottom {
+    border-bottom: thick double cornsilk;
+}
+
 header, footer {
     display: flex;
     padding-left: 200px;
