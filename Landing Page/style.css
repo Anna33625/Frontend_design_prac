@@ -96,5 +96,13 @@ a:hover {
     text-align: center;
     height: 500px;
     padding-top: 100px;
+}
 
+footer li::after {
+    content: '|';
+    padding-right: 10px;
+}
+
+footer li.last::after {
+    content: ' ';
 }
