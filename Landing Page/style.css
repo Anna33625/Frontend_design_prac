@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header, footer {
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: cornsilk;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+ul a{
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+li {
+    display: inline-block;
+    
+}
+
+li a {
+    text-decoration: none;
+}
+
+.section{
+    display: flex;
+    padding: 35px 50px;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.subsection1, a {
+    color: rgb(85, 6, 72);
+}
+
+.subsection1 a {
+    font-size: 15px;
+}
+
+a:hover {
+    color: rgb(248, 47, 221);
+}
+
+.section1 {
+    padding: 50px 60px 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallery {
+    padding: 10px;
+    float: left;
+    width: 200px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery h3, .img-desc {
+    text-align: center;
+}
+
+.section2 {
+    background: url(running.jpeg);
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    opacity: 0.6;
+}
+
+.section2 .dont-wait {
+    background: rgba(76, 175, 80, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
