@@ -1,24 +1,34 @@
-body {
-    margin: 0;
+@-ms-viewport {
+    width: device-width;
 }
 
-header {
-    position: sticky;
-    top: 0;
+body {
+    margin: 0;
 }
 
 .border-bottom {
     border-bottom: thick double cornsilk;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: cornsilk;
+    text-align: center;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
 header, footer {
     display: flex;
-    padding-left: 200px;
-    padding-right: 200px;
     background-color: cornsilk;
+    padding-left: 100px;
+    padding-right: 100px;
     justify-content: space-between;
     align-items: center;
 }
+}
+
 
 h1 a {
     text-decoration: none;
@@ -38,30 +48,55 @@ li a {
     text-decoration: none;
 }
 
+@media (min-width: 1024px ) {
 .section{
     display: flex;
-    padding: 35px 50px;
-    margin: 10px;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 30px;
+    align-items: center;
 }
 
-.subsection1 {
-    padding-left: 50px;
+.section img {
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.section .subsection1 {
+    margin: 20px;
+    align-items: flex-end;
+    max-width: 500px;
+}
+}
+
+.section .subsection1 {
+    margin: 20px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.section img {
+    max-width: 650px;
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: auto;
 }
 
 .subsection1, a {
     color: rgb(85, 6, 72);
 }
 
-
 .subsection1 a {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 a:hover {
     color: rgb(248, 47, 221);
 }
 
+@media (min-width: 750px) {
 .section1 {
     padding: 50px 60px 50px;
     display: flex;
@@ -70,13 +105,23 @@ a:hover {
 
 .gallery {
     padding: 10px;
-    float: left;
-    width: 200px;
+    width: 100%;
 }
 
 .gallery img {
     width: 100%;
     height: auto;
+}
+}
+
+@media (max-width: 750px) {
+.gallery img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
 }
 
 .gallery h3, .img-desc {
@@ -86,16 +131,24 @@ a:hover {
 .section2 {
     background: url(running.jpeg);
     background-size: cover;
-    position: relative;
-    z-index: -1;
-    height: 500px;
 }
 
 .section2 .dont-wait {
     background: rgba(255, 255, 255, 0.7);
     text-align: center;
     height: 500px;
-    padding-top: 100px;
+    padding-top: 190px;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    background-color: cornsilk;
+    justify-content: space-between;
+}
+
+footer p {
+    padding-right: 20px;
 }
 
 footer li::after {
