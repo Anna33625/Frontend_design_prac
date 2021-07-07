@@ -187,13 +187,14 @@ a:hover {
 
 .section2 .dont-wait {
     background: rgba(255, 255, 255, 0.7);
-    text-align: center;
     height: 500px;
-    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
     font-family: 'Lobster', cursive;
     font-size: 20px;
-
 }
 
 .sign-up {
